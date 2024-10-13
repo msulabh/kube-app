@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: vprodb
 spec:
+  type: ClusterIP
   selector:
     app: vprodb  # This should match the labels in your Deployment
   ports:
